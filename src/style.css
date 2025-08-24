@@ -1,17 +1,17 @@
 :root {
   --blue: #00ACDC;
-  --black: #000000;
+  --black: #000;
 }
 
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: Roboto, sans-serif;
 
 }
 
 .header {
   width: 100%;
-  background-color: #FFFFFF;
+  background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -25,6 +25,10 @@ margin-top: 10px;
 margin-bottom: 10px;
 }
 
+a {
+  position: relative;
+}
+
 .nav a {
   text-decoration: none;
   color: var(--black);
@@ -33,9 +37,6 @@ margin-bottom: 10px;
   color: var(--blue);
 }
 
-a {
-  position: relative;
-}
 
 .nav a.is-active::after {
   content: "";

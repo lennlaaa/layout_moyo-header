@@ -33,6 +33,7 @@ body {
   margin: 0;
   justify-content: flex-end;
   padding-right: 50px;
+  padding-left: 509px;
 }
 
 .nav-item + .nav-item {
@@ -52,7 +53,7 @@ body {
   height: 15px;
 }
 
-a:hover {
+.nav-link:hover {
   color: var(--blue);
 }
 
@@ -65,18 +66,17 @@ a:hover {
   background-color: var(--blue);
   position: absolute;
   left: 0;
-  top: 20px;
+  bottom: -20px;
 }
 
 .box1 {
-  color: #00ACDC;
+  color: #00acdc;
 }
 
 @media (max-width: 1024px) {
-.nav-list {
+  .nav-list {
     padding-right: 50px;
+    padding-left: 333px;
     flex-wrap: wrap;
   }
 }
-
-

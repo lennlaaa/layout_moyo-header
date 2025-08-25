@@ -15,7 +15,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-    padding-right: 50px;
+  padding-right: 50px;
 }
 
 .logo img {

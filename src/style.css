@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
 :root {
   --blue: #00ACDC;
   --black: #000;
@@ -5,8 +7,7 @@
 
 body {
   margin: 0;
-  font-family: Roboto, sans-serif;
-
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
 .header {
@@ -18,27 +19,42 @@ body {
 }
 
 .picture {
-width: 40px;
-height: 40px;
-margin-left: 50px;
-margin-top: 10px;
-margin-bottom: 10px;
+  width: 40px;
+  height: 40px;
+  margin-left: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-a {
+.nav-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item + .nav-item {
+  margin-left: 20px;
+}
+
+.nav-link {
   position: relative;
-}
-
-.nav a {
   text-decoration: none;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  text-transform: uppercase;
   color: var(--black);
+  display: flex;
+  align-items: center;
+  height: 15px;
 }
 
-.nav a:hover {
+.nav-link:hover {
   color: var(--blue);
 }
 
-.nav a.is-active::after {
+.nav-link.is-active::after {
   content: "";
   display: block;
   width: 37px;
@@ -47,23 +63,5 @@ a {
   background-color: var(--blue);
   position: absolute;
   left: 0;
- bottom: 0;
-}
-
-.nav ul {
-  display: flex;
-  list-style: none;
-}
-
-.nav ul li {
-  margin: 20px;
-}
-
-.box1 {
-font-weight: 500;
-font-size: 12px;
-line-height: 100%;
-letter-spacing: 0;
-text-transform: uppercase;
-color: var(--black);
+  bottom: 0;
 }
